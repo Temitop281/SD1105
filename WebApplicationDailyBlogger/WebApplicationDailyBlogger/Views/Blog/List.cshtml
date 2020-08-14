@@ -1,0 +1,27 @@
+﻿@model IEnumerable<WebApplicationDailyBlogger.Models.BlogPost>
+
+@{ 
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <a href="C:\Users\ACT-Student\source\repos\Temitop281\C-SD104\WebApplicationDailyBlogger\WebApplicationDailyBlogger\appsettings.Development.json">C:\Users\ACT-Student\source\repos\Temitop281\C-SD104\WebApplicationDailyBlogger\WebApplicationDailyBlogger\appsettings.Development.json</a>
+    <meta name="viewport" content="width=device-width" />
+    <title>List</title>
+</head>
+<body>
+<p>
+</p>
+
+@foreach  (var item in Model) {
+    <div>
+        @Html.DisplayFor(m => item.blogTitle)
+        <p>@Html.DisplayFor(m => item.content) </p>
+        <p>@Html.DisplayFor(m => item.blogDate) </p>
+    </div>
+    }
+</body>
+</html>
