@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using System.IO;
-using System.Net;
+
 namespace Cleanwaterprojectsupport.Controllers
 {
     public class RegisterAccountController : Controller
